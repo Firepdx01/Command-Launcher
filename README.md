@@ -5,4 +5,4 @@
 
 From Boardwalk's ashes here comes Command Launcher!
 
-PojavLauncher is a launcher that allows you to play Minecraft: Java Edition on your Android device!
+Command Launcher is a launcher that allows you to play Minecraft: Java Edition on your Android device!
