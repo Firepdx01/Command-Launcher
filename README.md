@@ -1,6 +1,6 @@
 <H1 align="center">PojavLauncher</H1>
 
-<img src="https://github.com/Firepdx01/Command-Launcher/blob/main/Command_Block_(Story_Mode).ico" align="left" width="500" height="500" alt="PojavLauncher logo">
+<img src="https://github.com/Firepdx01/Command-Launcher/blob/main/Command_Block_(Story_Mode).ico" align="left" width="150" height="150" alt="PojavLauncher logo">
 
 [![Android CI](https://github.com/PojavLauncherTeam/PojavLauncher/workflows/Android%20CI/badge.svg)](https://github.com/PojavLauncherTeam/PojavLauncher/actions)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/PojavLauncherTeam/PojavLauncher)](https://github.com/PojavLauncherTeam/PojavLauncher/actions)
