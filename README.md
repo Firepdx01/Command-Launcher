@@ -35,3 +35,117 @@ Command Launcher isn’t just a tool—it’s a love letter to Minecraft’s leg
 *Keep the legacy alive. Play smarter, faster, and simpler.*  
 
 ...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Launcher</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="gradient-bg">
+        <div class="logo-container">
+            <img src="https://github.com/Firepdx01/Command-Launcher/blob/main/Command_Block_(Story_Mode).ico" 
+                 alt="Command Launcher Logo" 
+                 class="logo">
+            <div class="title-group">
+                <h1>Command Launcher</h1>
+                <p class="tagline">Reload Minecraft's Legacy</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="hero">
+                <h2>Rediscover Classic Minecraft</h2>
+                <p>Experience Java Edition with enhanced performance and nostalgia</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-box classic">
+                <i class="fas fa-history"></i>
+                <h3>Time Machine Mode</h3>
+                <p>Play any version from Classic to Modern</p>
+            </div>
+            <!-- Repeat for other feature boxes -->
+        </section>
+
+        <section class="download">
+            <h2>Get Command Launcher</h2>
+            <div class="download-grid">
+                <div class="download-card windows">
+                    <div class="os-icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <div class="download-info">
+                        <h3>Windows Edition</h3>
+                        <div class="meta-info">
+                            <span class="version">v2.1.4</span>
+                            <span class="size">• 58MB</span>
+                        </div>
+                    </div>
+                    <a href="#" class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Installer
+                        <span class="subtitle">Windows 10/11 x64</span>
+                    </a>
+                </div>
+
+                <div class="download-card legacy">
+                    <div class="os-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="download-info">
+                        <h3>Legacy Edition</h3>
+                        <div class="meta-info">
+                            <span class="version">v1.8.3</span>
+                            <span class="size">• 32MB</span>
+                        </div>
+                    </div>
+                    <a href="#" class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Portable Version
+                        <span class="subtitle">Windows 7+</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="checksum">
+                <h4><i class="fas fa-fingerprint"></i> SHA-256 Checksum</h4>
+                <code class="checksum-code">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code>
+                <button class="copy-btn">
+                    <i class="far fa-copy"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="system-req">
+                <h4><i class="fas fa-microchip"></i> Requirements</h4>
+                <ul>
+                    <li>Windows 7 or later</li>
+                    <li>Java 8+</li>
+                    <li>4GB RAM</li>
+                </ul>
+            </div>
+            <div class="community">
+                <h4><i class="fas fa-users"></i> Community</h4>
+                <a href="#" class="social-btn discord">
+                    <i class="fab fa-discord"></i>
+                    Join Discord
+                </a>
+                <a href="#" class="social-btn github">
+                    <i class="fab fa-github"></i>
+                    View Source
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
