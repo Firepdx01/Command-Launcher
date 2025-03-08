@@ -34,8 +34,19 @@ Command Launcher isn’t just a tool—it’s a love letter to Minecraft’s leg
 
 *Keep the legacy alive. Play smarter, faster, and simpler.*  
 
-...
-.
-    </footer>
-</body>
-</html>
+## ✨ New Features (v2.1.0)
+
+- **Auto-Update System**: Seamless background updates
+- **Performance Boost**: 30% reduced memory usage
+- **Smart Resource Allocation**: Automatic RAM optimization
+- **Texture Pack Manager**: Direct import from popular repositories
+- **Cross-Platform Saves**: Cloud sync integration (optional)
+- **Advanced Debugging**: Built-in crash analyzer
+- **Custom Skins**: Native skin loader with HD support
+- **Mod Presets**: Save and share mod configurations
+
+## 📥 Installation
+
+1. Download the latest installer:
+   ```bash
+   https://github.com/Firepdx01/Command-Launcher/releases/download/launcher/Command.Launcher.exe
