@@ -9,6 +9,9 @@
   <meta name="google-site-verification" content="rkIJZmZGWWI1DAgwbwPxuxYMAGEmkmZJG2xXauBq30g" />
 </head>
 <body>
+  <!-- Dark/Light Mode Toggle Button -->
+  <button id="mode-toggle" class="mode-toggle"><i class="fas fa-sun"></i></button>
+
   <!-- Header with Logo and Navigation -->
   <header class="gradient-bg slide-in">
     <div class="logo-container">
@@ -169,18 +172,17 @@
       <pre><code class="html-code">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8" /&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-  &lt;title&gt;Command Launcher&lt;/title&gt;
-  &lt;link rel="stylesheet" href="main.css" /&gt;
-  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /&gt;
-  &lt;meta name="google-site-verification" content="rkIJZmZGWWI1DAgwbwPxuxYMAGEmkmZJG2xXauBq30g" /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;!-- Header, Main, Footer, etc. --&gt;
-  &lt;!-- (Full source code here) --&gt;
-&lt;/body&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Command Launcher&lt;/title&gt;
+    &lt;link rel="stylesheet" href="main.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /&gt;
+    &lt;meta name="google-site-verification" content="rkIJZmZGWWI1DAgwbwPxuxYMAGEmkmZJG2xXauBq30g" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Header, Main, Footer, etc. --&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
       </code></pre>
       <a href="https://github.com/Firepdx01/Command-Launcher" target="_blank" class="github-link">
@@ -191,6 +193,41 @@
 
   <!-- JavaScript for Interactive Features -->
   <script>
+    // Dark/Light Mode Toggle
+    const modeToggleBtn = document.getElementById('mode-toggle');
+    
+    // Set initial mode based on localStorage or system preference
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedMode = localStorage.getItem('mode');
+      if (savedMode === 'light') {
+        document.body.classList.add('light-mode');
+        modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+      } else if (savedMode === 'dark') {
+        document.body.classList.remove('light-mode');
+        modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        // Default: check system preference
+        if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+          document.body.classList.add('light-mode');
+          modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        } else {
+          document.body.classList.remove('light-mode');
+          modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+      }
+    });
+    
+    modeToggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      if (document.body.classList.contains('light-mode')) {
+        modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem('mode', 'light');
+      } else {
+        modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem('mode', 'dark');
+      }
+    });
+
     // Copy-to-clipboard for checksum
     const copyBtn = document.getElementById('copy-btn');
     const checksumCode = document.getElementById('checksum-code');
