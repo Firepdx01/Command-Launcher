@@ -142,7 +142,8 @@
           <i class="fab fa-discord"></i>
           Join Discord
         </a>
-        <a href="#" class="social-btn github bounce-in">
+        <!-- Modified View Source button to open modal -->
+        <a href="#" id="view-source-btn" class="social-btn github bounce-in">
           <i class="fab fa-github"></i>
           View Source
         </a>
@@ -152,6 +153,34 @@
       <i class="fas fa-arrow-up"></i>
     </div>
   </footer>
+
+  <!-- Source Code Modal -->
+  <div id="sourceModal" class="modal">
+    <div class="modal-content slide-in">
+      <span class="close-button">&times;</span>
+      <h2>Source Code</h2>
+      <pre><code class="html-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+  &lt;title&gt;Command Launcher&lt;/title&gt;
+  &lt;link rel="stylesheet" href="main.css" /&gt;
+  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /&gt;
+  &lt;meta name="google-site-verification" content="rkIJZmZGWWI1DAgwbwPxuxYMAGEmkmZJG2xXauBq30g" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Header, Main, Footer, etc. --&gt;
+  &lt;!-- (Full source code here) --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+      <a href="https://github.com/Firepdx01/Command-Launcher" target="_blank" class="github-link">
+        View on GitHub
+      </a>
+    </div>
+  </div>
 
   <!-- JavaScript for Interactive Features -->
   <script>
@@ -174,6 +203,24 @@
     });
     window.addEventListener('scroll', () => {
       scrollTopBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+    });
+
+    // Source Code Modal functionality
+    const viewSourceBtn = document.getElementById('view-source-btn');
+    const sourceModal = document.getElementById('sourceModal');
+    const closeButton = document.querySelector('.close-button');
+
+    viewSourceBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      sourceModal.style.display = 'block';
+    });
+    closeButton.addEventListener('click', () => {
+      sourceModal.style.display = 'none';
+    });
+    window.addEventListener('click', (e) => {
+      if (e.target === sourceModal) {
+        sourceModal.style.display = 'none';
+      }
     });
   </script>
 </body>
