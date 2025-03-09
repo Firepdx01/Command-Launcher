@@ -213,12 +213,12 @@ body {
   padding: 1rem;
 }
 
-.system-req, .community {
+.system-req, .community, .legal {
   flex: 1 1 300px;
   margin: 1rem;
 }
 
-.system-req ul {
+.system-req ul, .legal ul {
   list-style: none;
   padding: 0;
 }
@@ -343,6 +343,36 @@ pre {
 
 .hover-bounce:hover {
   animation: hoverBounce 0.3s ease-in-out;
+}
+
+/* Dark mode (default) is set by :root */
+
+/* Light Mode Overrides */
+body.light-mode {
+  --primary: #ffffff;
+  --secondary: #f2f2f2;
+  --accent: #007acc;
+  --text: #000000;
+  --gradient-start: #f2f2f2;
+  --gradient-end: #ffffff;
+}
+
+/* Mode Toggle Button */
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: var(--text);
+  border: none;
+  border-radius: 50%;
+  padding: 0.8rem;
+  cursor: pointer;
+  z-index: 1100;
+  transition: background 0.3s ease;
+}
+.mode-toggle:hover {
+  background: #0099e6;
 }
 
 /* Responsive */
