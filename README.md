@@ -30,7 +30,7 @@ Join a passionate community on [**Discord**]([https://discord.gg/NXfB3UFD]) to s
 
 Command Launcher isn’t just a tool—it’s a love letter to Minecraft’s legacy. Download now and rediscover the game that defined a generation, all with the speed and reliability modern players deserve.  
 
-🔗 **Get Started**: [GitHub Repository](https://github.com/Firepdx01/Command-Launcher) | 💬 **Join Us**: [Discord Server]([https://discord.gg/NXfB3UFD])  
+🔗 **Get Started**: [GitHub Repository](https://github.com/Firepdx01/Command-Launcher) |  💬 **Join Us**: |  🔍 **Website**: [Website]([https://firepdx01.github.io/Command-Launcher/])  
 
 *Keep the legacy alive. Play smarter, faster, and simpler.*  
 
