@@ -50,3 +50,7 @@ Command Launcher isn’t just a tool—it’s a love letter to Minecraft’s leg
 1. Download the latest installer:
    ```bash
    https://github.com/Firepdx01/Command-Launcher/releases/download/launcher/Command.Launcher.exe
+
+   Command Launcher isn’t just a tool—it’s a tribute to Minecraft’s legacy. With its combination of retro design and modern performance features, it provides a smart, fast, and stable way to enjoy Minecraft: Java Edition. Whether you’re reliving classic moments or exploring new worlds, this launcher is designed to enhance your Minecraft experience.
+
+(See the project details on GitHub for the full readme and additional information.)
