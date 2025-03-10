@@ -66,7 +66,7 @@ body {
 }
 
 /* Main Sections */
-.about, .features, .download, .updates {
+.about, .features, .download, .updates, .upcoming {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
@@ -147,6 +147,13 @@ body {
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+.download-btn.disabled {
+  background: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
 .download-btn:hover {
   background: #0099e6;
   box-shadow: 0 4px 15px rgba(0, 168, 252, 0.3);
@@ -200,6 +207,41 @@ body {
 
 .update-date {
   font-size: 0.8rem;
+  color: #888;
+}
+
+/* Upcoming Features Section */
+.upcoming .upcoming-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.upcoming-item {
+  background: var(--secondary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.upcoming-item::after {
+  content: "COMING SOON";
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  background: var(--accent);
+  color: white;
+  padding: 3px 30px;
+  transform: rotate(45deg);
+  font-size: 0.75rem;
+}
+
+.release-date {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
   color: #888;
 }
 
@@ -345,8 +387,6 @@ pre {
   animation: hoverBounce 0.3s ease-in-out;
 }
 
-/* Dark mode (default) is set by :root */
-
 /* Light Mode Overrides */
 body.light-mode {
   --primary: #ffffff;
@@ -375,7 +415,7 @@ body.light-mode {
   background: #0099e6;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
   .logo-container {
     flex-direction: column;
@@ -387,5 +427,8 @@ body.light-mode {
   .navbar ul {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .upcoming-list {
+    grid-template-columns: 1fr;
   }
 }
