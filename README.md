@@ -30,7 +30,7 @@ Join a passionate community on [**Discord**]([https://discord.gg/NXfB3UFD]) to s
 
 Command Launcher isn’t just a tool—it’s a love letter to Minecraft’s legacy. Download now and rediscover the game that defined a generation, all with the speed and reliability modern players deserve.  
 
-🔗 **Get Started**: [GitHub Repository](https://github.com/Firepdx01/Command-Launcher) | 💬 **Join Us**: [Discord Server]([https://discord.gg/NXfB3UFD])  
+🔗 **Get Started**: [GitHub Repository](https://github.com/Firepdx01/Command-Launcher) |  💬 **Join Us**: [**Discord**](https://discord.gg/NXfB3UFD) |  🔍 **Website**: [Website](https://firepdx01.github.io/Command-Launcher/)  
 
 *Keep the legacy alive. Play smarter, faster, and simpler.*  
 
@@ -44,9 +44,13 @@ Command Launcher isn’t just a tool—it’s a love letter to Minecraft’s leg
 - **Advanced Debugging**: Built-in crash analyzer
 - **Custom Skins**: Native skin loader with HD support
 - **Mod Presets**: Save and share mod configurations
+Command Launcher isn’t just a tool—it’s a tribute to Minecraft’s legacy. With its combination of retro design and modern performance features, it provides a smart, fast, and stable way to enjoy Minecraft: Java Edition. Whether you’re reliving classic moments or exploring new worlds, this launcher is designed to enhance your Minecraft experience.
 
+(See the project details on GitHub for the full readme and additional information.)
 ## 📥 Installation
 
 1. Download the latest installer:
    ```bash
    https://github.com/Firepdx01/Command-Launcher/releases/download/launcher/Command.Launcher.exe
+
+
