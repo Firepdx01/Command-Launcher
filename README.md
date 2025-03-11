@@ -51,6 +51,5 @@ Command Launcher isn’t just a tool—it’s a tribute to Minecraft’s legacy.
 
 1. Download the latest installer:
    ```bash
-   https://github.com/Firepdx01/Command-Launcher/releases/download/launcher/Command.Launcher.exe
-
+https://github.com/Firepdx01/Command-Launcher/releases/download/client/Command.Launcher.Setup.exe
 
