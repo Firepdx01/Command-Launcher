@@ -1,9 +1,9 @@
 <H1 align="center">Command Launcher</H1>
 
-![Downloads](https://img.shields.io/github/downloads/Firepdx01/Command-Launcher/total?color=green&style=for-the-badge)
 
 <img src="https://github.com/Firepdx01/Command-Launcher/blob/main/Command_Block_(Story_Mode).ico" align="left" width="150" height="150" alt="PojavLauncher logo">
 
+![Downloads](https://img.shields.io/github/downloads/Firepdx01/Command-Launcher/total?color=green&style=for-the-badge)
 
 From Boardwalk's ashes here comes Command Launcher!
 
