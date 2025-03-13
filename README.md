@@ -57,4 +57,4 @@ Command Launcher isn’t just a tool—it’s a tribute to Minecraft’s legacy.
    https://github.com/Firepdx01/Command-Launcher/releases/download/client/Command.Launcher.Setup.exe 
 2. Download the lastet Zip Launcher:
    ```bash
-   https://github.com/Firepdx01/Command-Launcher/releases/download/beta/Command.Launcher.Client.exe](https://github.com/Firepdx01/Command-Launcher/releases/download/zip/Command.Launcher.zip
+   https://github.com/Firepdx01/Command-Launcher/releases/download/zip/Command.Launcher.zip
