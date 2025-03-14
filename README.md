@@ -7,7 +7,7 @@
 
 
 
-## **Command Launcher (CLauncher)**  
+
 
 Emerging from the legacy of Boardwalk, **Command Launcher (CLauncher)** brings a fresh and enhanced way to experience Minecraft: Java Edition on your PC!
 
@@ -19,7 +19,7 @@ Visit our official website: [www.clauncher.fun](https://www.clauncher.fun)
 
 
 
-## **Command Launcher**  
+## **Command Launcher (CLauncher)**   
 
 Rising from the legacy of Boardwalk, **Command Launcher** revives the classic Minecraft: Java Edition experience with unmatched stability, speed, and nostalgia. Designed for both casual players and seasoned veterans, this open-source launcher combines a minimalist, retro-inspired interface with modern performance optimizations, delivering a seamless journey into Minecraft’s vast worlds.  
 
