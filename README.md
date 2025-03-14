@@ -5,6 +5,8 @@
 ![Downloads](https://img.shields.io/github/downloads/Firepdx01/Command-Launcher/total?color=green&style=for-the-badge)  
 [![Discord](https://img.shields.io/badge/Discord-4903FC?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/NXfB3UFD)  
 
+
+
 ## **Command Launcher (CLauncher)**  
 
 Emerging from the legacy of Boardwalk, **Command Launcher (CLauncher)** brings a fresh and enhanced way to experience Minecraft: Java Edition on your PC!
