@@ -69,6 +69,7 @@
     <section id="download" class="download fade-in">
       <h2>Get Command Launcher</h2>
       <div class="download-grid">
+        <!-- Windows Edition -->
         <div class="download-card windows hover-bounce">
           <div class="os-icon">
             <i class="fab fa-windows"></i>
@@ -86,21 +87,40 @@
             <span class="subtitle">Windows 10/11 x64</span>
           </a>
         </div>
-     <div class="download-card legacy hover-bounce">
-  <div class="os-icon">
-    <i class="fab fa-android"></i> <!-- Android icon added here -->
-  </div>
-  <div class="download-info">
-    <h3>Android Edition</h3>
-    <div class="meta-info">
-      <span class="version">v1.0</span>
-      <span class="size">• 224MB</span>
-    </div>
-  </div>
-  <a href="#" class="download-btn disabled">
-    <i class="fas fa-download"></i>
-    Coming Soon
-    <span class="subtitle">Android 7/13++</span>
+        <!-- Zip Launcher -->
+        <div class="download-card zip hover-bounce">
+          <div class="os-icon">
+            <i class="fas fa-file-archive"></i>
+          </div>
+          <div class="download-info">
+            <h3>Zip Launcher</h3>
+            <div class="meta-info">
+              <span class="version">v1.0</span>
+              <span class="size">Size TBD</span>
+            </div>
+          </div>
+          <a href="https://github.com/Firepdx01/Command-Launcher/releases/download/zip/Command.Launcher.zip" class="download-btn">
+            <i class="fas fa-download"></i>
+            Download Zip
+            <span class="subtitle">Universal Edition</span>
+          </a>
+        </div>
+        <!-- Android Edition -->
+        <div class="download-card legacy hover-bounce">
+          <div class="os-icon">
+            <i class="fab fa-android"></i>
+          </div>
+          <div class="download-info">
+            <h3>Android Edition</h3>
+            <div class="meta-info">
+              <span class="version">v1.0</span>
+              <span class="size">• 224MB</span>
+            </div>
+          </div>
+          <a href="#" class="download-btn disabled">
+            <i class="fas fa-download"></i>
+            Coming Soon
+            <span class="subtitle">Android 7/13++</span>
           </a>
         </div>
       </div>
@@ -219,18 +239,18 @@
       const savedMode = localStorage.getItem('mode');
       if (savedMode === 'light') {
         document.body.classList.add('light-mode');
-        modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        modeToggleBtn.innerHTML = '<i class=\"fas fa-moon\"></i>';
       } else if (savedMode === 'dark') {
         document.body.classList.remove('light-mode');
-        modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        modeToggleBtn.innerHTML = '<i class=\"fas fa-sun\"></i>';
       } else {
         // Default: check system preference
         if (window.matchMedia('(prefers-color-scheme: light)').matches) {
           document.body.classList.add('light-mode');
-          modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+          modeToggleBtn.innerHTML = '<i class=\"fas fa-moon\"></i>';
         } else {
           document.body.classList.remove('light-mode');
-          modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+          modeToggleBtn.innerHTML = '<i class=\"fas fa-sun\"></i>';
         }
       }
     });
@@ -238,10 +258,10 @@
     modeToggleBtn.addEventListener('click', () => {
       document.body.classList.toggle('light-mode');
       if (document.body.classList.contains('light-mode')) {
-        modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        modeToggleBtn.innerHTML = '<i class=\"fas fa-moon\"></i>';
         localStorage.setItem('mode', 'light');
       } else {
-        modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        modeToggleBtn.innerHTML = '<i class=\"fas fa-sun\"></i>';
         localStorage.setItem('mode', 'dark');
       }
     });
@@ -251,9 +271,9 @@
     const checksumCode = document.getElementById('checksum-code');
     copyBtn.addEventListener('click', () => {
       navigator.clipboard.writeText(checksumCode.textContent).then(() => {
-        copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+        copyBtn.innerHTML = '<i class=\"fas fa-check\"></i>';
         setTimeout(() => {
-          copyBtn.innerHTML = '<i class="far fa-copy"></i>';
+          copyBtn.innerHTML = '<i class=\"far fa-copy\"></i>';
         }, 2000);
       });
     });
