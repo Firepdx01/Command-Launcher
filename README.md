@@ -5,10 +5,17 @@
 ![Downloads](https://img.shields.io/github/downloads/Firepdx01/Command-Launcher/total?color=green&style=for-the-badge)  
 [![Discord](https://img.shields.io/badge/Discord-4903FC?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/NXfB3UFD)  
 
-Emerging from the legacy of Boardwalk, Command Launcher brings a fresh and 
-enhanced way to experience Minecraft: Java Edition on your PC!
+## **Command Launcher (CLauncher)**  
 
-(Due to technical issues, the search service is temporarily unavailable.)  
+Emerging from the legacy of Boardwalk, **Command Launcher (CLauncher)** brings a fresh and enhanced way to experience Minecraft: Java Edition on your PC!
+
+CLauncher is the official abbreviation for Command Launcher, representing its modern and streamlined approach to launching Minecraft efficiently.
+
+Visit our official website: [www.clauncher.fun](https://www.clauncher.fun)
+
+*(Due to technical issues, the search service is temporarily unavailable.)*
+
+
 
 ## **Command Launcher**  
 
