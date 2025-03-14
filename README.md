@@ -1,13 +1,4 @@
-<H1 align="center">Command Launcher</H1>
-
-<img src="https://github.com/Firepdx01/Command-Launcher/blob/main/Command_Block_(Story_Mode).ico" align="left" width="150" height="150" alt="PojavLauncher logo">  
-
-![Downloads](https://img.shields.io/github/downloads/Firepdx01/Command-Launcher/total?color=green&style=for-the-badge)  
-[![Discord](https://img.shields.io/badge/Discord-4903FC?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/NXfB3UFD)  
-
-
-
-
+## **Command Launcher (CLauncher)**  
 
 Emerging from the legacy of Boardwalk, **Command Launcher (CLauncher)** brings a fresh and enhanced way to experience Minecraft: Java Edition on your PC!
 
@@ -16,8 +7,6 @@ CLauncher is the official abbreviation for Command Launcher, representing its mo
 Visit our official website: [www.clauncher.fun](https://www.clauncher.fun)
 
 *(Due to technical issues, the search service is temporarily unavailable.)*
-
-
 
 ## **Command Launcher (CLauncher)**   
 
@@ -42,7 +31,8 @@ Command Launcher isn’t just a tool—it’s a love letter to Minecraft’s leg
 
 🔗 **Get Started**: [GitHub Repository](https://github.com/Firepdx01/Command-Launcher) |  
 💬 **Join Us**: [**Discord**](https://discord.gg/NXfB3UFD) |  
-🔍 **Website**: [Website](https://firepdx01.github.io/Command-Launcher/)  
+🔍 **Website**: [Website](https://firepdx01.github.io/Command-Launcher/) |  
+📖 **Wiki**: [Command Launcher Wiki](https://command-launcher.fandom.com/wiki/Command_Launcher_Wiki)  
 
 *Keep the legacy alive. Play smarter, faster, and simpler.*  
 
