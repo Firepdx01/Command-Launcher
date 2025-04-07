@@ -10,6 +10,8 @@
   <meta name="msvalidate.01" content="EF05CCA660E5639A1EC56818FEF32EE9" />
 </head>
 <body>
+  <!-- OAuth Info (inserted dynamically if query parameters are present) -->
+  
   <!-- Dark/Light Mode Toggle Button -->
   <button id="mode-toggle" class="mode-toggle"><i class="fas fa-sun"></i></button>
 
@@ -231,54 +233,78 @@
 
   <!-- JavaScript for Interactive Features -->
   <script>
-    // Dark/Light Mode Toggle
+    // --- Custom OAuth Redirect Handling ---
+    function getQueryParams() {
+      var params = {};
+      var queryString = window.location.search.substring(1);
+      var vars = queryString.split("&");
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || "");
+      }
+      return params;
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      var params = getQueryParams();
+      if (Object.keys(params).length > 0) {
+        var oauthInfoDiv = document.createElement("div");
+        oauthInfoDiv.id = "oauth-info";
+        oauthInfoDiv.style.background = "#222";
+        oauthInfoDiv.style.padding = "1rem";
+        oauthInfoDiv.style.textAlign = "center";
+        oauthInfoDiv.style.color = "#fff";
+        oauthInfoDiv.innerHTML = "<p>OAuth redirect received. Your token is: " + (params.token || "N/A") + "</p>";
+        if (params.token) {
+          oauthInfoDiv.innerHTML += '<p><a href="mylauncher://auth?token=' + encodeURIComponent(params.token) + '" style="color: var(--accent); text-decoration: underline;">Click here to open Command Launcher</a></p>';
+        }
+        document.body.insertBefore(oauthInfoDiv, document.body.firstChild);
+      }
+    });
+
+    // --- Dark/Light Mode Toggle ---
     const modeToggleBtn = document.getElementById('mode-toggle');
-    
-    // Set initial mode based on localStorage or system preference
     window.addEventListener('DOMContentLoaded', () => {
       const savedMode = localStorage.getItem('mode');
       if (savedMode === 'light') {
         document.body.classList.add('light-mode');
-        modeToggleBtn.innerHTML = '<i class=\"fas fa-moon\"></i>';
+        modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
       } else if (savedMode === 'dark') {
         document.body.classList.remove('light-mode');
-        modeToggleBtn.innerHTML = '<i class=\"fas fa-sun\"></i>';
+        modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
       } else {
-        // Default: check system preference
         if (window.matchMedia('(prefers-color-scheme: light)').matches) {
           document.body.classList.add('light-mode');
-          modeToggleBtn.innerHTML = '<i class=\"fas fa-moon\"></i>';
+          modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
         } else {
           document.body.classList.remove('light-mode');
-          modeToggleBtn.innerHTML = '<i class=\"fas fa-sun\"></i>';
+          modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
         }
       }
     });
-    
     modeToggleBtn.addEventListener('click', () => {
       document.body.classList.toggle('light-mode');
       if (document.body.classList.contains('light-mode')) {
-        modeToggleBtn.innerHTML = '<i class=\"fas fa-moon\"></i>';
+        modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
         localStorage.setItem('mode', 'light');
       } else {
-        modeToggleBtn.innerHTML = '<i class=\"fas fa-sun\"></i>';
+        modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
         localStorage.setItem('mode', 'dark');
       }
     });
 
-    // Copy-to-clipboard for checksum
+    // --- Copy-to-clipboard for checksum ---
     const copyBtn = document.getElementById('copy-btn');
     const checksumCode = document.getElementById('checksum-code');
     copyBtn.addEventListener('click', () => {
       navigator.clipboard.writeText(checksumCode.textContent).then(() => {
-        copyBtn.innerHTML = '<i class=\"fas fa-check\"></i>';
+        copyBtn.innerHTML = '<i class="fas fa-check"></i>';
         setTimeout(() => {
-          copyBtn.innerHTML = '<i class=\"far fa-copy\"></i>';
+          copyBtn.innerHTML = '<i class="far fa-copy"></i>';
         }, 2000);
       });
     });
 
-    // Scroll-to-top functionality
+    // --- Scroll-to-top functionality ---
     const scrollTopBtn = document.getElementById('scroll-top');
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -287,11 +313,10 @@
       scrollTopBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
     });
 
-    // Source Code Modal functionality
+    // --- Source Code Modal functionality ---
     const viewSourceBtn = document.getElementById('view-source-btn');
     const sourceModal = document.getElementById('sourceModal');
     const closeButton = document.querySelector('.close-button');
-
     viewSourceBtn.addEventListener('click', (e) => {
       e.preventDefault();
       sourceModal.style.display = 'block';
