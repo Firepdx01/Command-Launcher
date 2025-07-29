@@ -7,42 +7,282 @@
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <meta name="google-site-verification" content="rkIJZmZGWWI1DAgwbwPxuxYMAGEmkmZJG2xXauBq30g" />
-  <meta name="msvalidate.01" content="EF05CCA660E5639A1EC56818FEF32EE9" />
 </head>
 <body>
-  <!-- OAuth Info: Display token if passed in query parameters -->
+  <!-- Dark/Light Mode Toggle Button -->
+  <button id="mode-toggle" class="mode-toggle"><i class="fas fa-sun"></i></button>
+
+  <!-- Header with Logo and Navigation -->
+  <header class="gradient-bg slide-in">
+    <div class="logo-container">
+      <img src="https://raw.githubusercontent.com/Firepdx01/Command-Launcher/page/title.png" 
+           alt="Command Launcher Logo" 
+           style="width:625px; height:300px;" 
+           class="logo" />
+      <div class="title-group fade-in">
+        <h1>Command Launcher</h1>
+        <p class="tagline">Classic Edition</p>
+      </div>
+    </div>
+    <nav class="navbar fade-in">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#updates">Updates</a></li>
+        <li><a href="#upcoming">Upcoming</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="about fade-in">
+      <div class="hero">
+        <h2>Rediscover Classic Minecraft</h2>
+        <p>Experience Java Edition with enhanced performance and nostalgia.</p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="feature-box classic zoom-in">
+        <i class="fas fa-history"></i>
+        <h3>Time Machine Mode</h3>
+        <p>Play any version from Classic to Modern.</p>
+      </div>
+      <div class="feature-box enhanced zoom-in">
+        <i class="fas fa-gamepad"></i>
+        <h3>Enhanced Controls</h3>
+        <p>Customize key bindings and game settings.</p>
+      </div>
+      <div class="feature-box multiplayer zoom-in">
+        <i class="fas fa-users"></i>
+        <h3>Multiplayer Mode</h3>
+        <p>Join friends for epic battles and cooperative play.</p>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download fade-in">
+      <h2>Get Command Launcher</h2>
+      <div class="download-grid">
+        <div class="download-card windows hover-bounce">
+          <div class="os-icon">
+            <i class="fab fa-windows"></i>
+          </div>
+          <div class="download-info">
+            <h3>Windows Edition</h3>
+            <div class="meta-info">
+              <span class="version">v1.0b</span>
+              <span class="size">• 76.9MB</span>
+            </div>
+          </div>
+          <a href="https://github.com/Firepdx01/Command-Launcher/releases/download/client/Command.Launcher.Setup.exe" class="download-btn">
+            <i class="fas fa-download"></i>
+            Download Installer
+            <span class="subtitle">Windows 10/11 x64</span>
+          </a>
+        </div>
+     <div class="download-card legacy hover-bounce">
+  <div class="os-icon">
+    <i class="fab fa-android"></i> <!-- Android icon added here -->
+  </div>
+  <div class="download-info">
+    <h3>Android Edition</h3>
+    <div class="meta-info">
+      <span class="version">v1.0</span>
+      <span class="size">• 224MB</span>
+    </div>
+  </div>
+  <a href="#" class="download-btn disabled">
+    <i class="fas fa-download"></i>
+    Coming Soon
+    <span class="subtitle">Android 7/13++</span>
+          </a>
+        </div>
+      </div>
+      <div class="checksum fade-in">
+        <h4><i class="fas fa-fingerprint"></i> SHA-256 Checksum</h4>
+        <code class="checksum-code" id="checksum-code">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code>
+        <button class="copy-btn" id="copy-btn">
+          <i class="far fa-copy"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates" class="updates fade-in">
+      <h2>Latest Updates</h2>
+      <div class="update-list">
+        <article class="update-item slide-in">
+          <h3>Version 1.0a Released</h3>
+          <p>Performance improvements and bug fixes for Windows Edition.</p>
+          <span class="update-date">2025-03-01</span>
+        </article>
+        <article class="update-item slide-in">
+          <h3>New Multiplayer Mode</h3>
+          <p>Join your friends in a new, enhanced multiplayer experience.</p>
+          <span class="update-date">2025-02-15</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Upcoming Features Section -->
+    <section id="upcoming" class="upcoming fade-in">
+      <h2>Upcoming Features</h2>
+      <div class="upcoming-list">
+        <article class="upcoming-item slide-in">
+          <h3>Android Edition</h3>
+          <p>Play Minecraft: Java Edition on your Android device with full controller support.</p>
+          <span class="release-date">Expected: Q4 2025</span>
+        </article>
+        <article class="upcoming-item slide-in">
+          <h3>Cross-Platform Play</h3>
+          <p>Seamlessly play with friends across Windows, Android, and iOS.</p>
+          <span class="release-date">Expected: 2026</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="slide-up">
+    <div class="footer-grid">
+      <div class="system-req">
+        <h4><i class="fas fa-microchip"></i> Requirements</h4>
+        <ul>
+          <li>Windows 7 or later</li>
+          <li>Java 8+</li>
+          <li>4GB RAM</li>
+        </ul>
+      </div>
+      <div class="community">
+        <h4><i class="fas fa-users"></i> Community</h4>
+        <a href="#" class="social-btn discord bounce-in">
+          <i class="fab fa-discord"></i>
+          Join Discord
+        </a>
+        <a href="#" id="view-source-btn" class="social-btn github bounce-in">
+          <i class="fab fa-github"></i>
+          View Source
+        </a>
+      </div>
+      <div class="legal">
+        <ul>
+          <li><a href="privacy_policy.html">Privacy Policy</a></li>
+          <li><a href="terms_of_use.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="scroll-top" id="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+  </footer>
+
+  <!-- Source Code Modal -->
+  <div id="sourceModal" class="modal">
+    <div class="modal-content slide-in">
+      <span class="close-button">&times;</span>
+      <h2>Source Code</h2>
+      <pre><code class="html-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Command Launcher&lt;/title&gt;
+    &lt;link rel="stylesheet" href="main.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /&gt;
+    &lt;meta name="google-site-verification" content="rkIJZmZGWWI1DAgwbwPxuxYMAGEmkmZJG2xXauBq30g" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Header, Main, Footer, etc. --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+      <a href="https://github.com/Firepdx01/Command-Launcher" target="_blank" class="github-link">
+        View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript for Interactive Features -->
   <script>
-    function getQueryParams() {
-      var params = {};
-      var queryString = window.location.search.substring(1);
-      var vars = queryString.split("&");
-      for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split("=");
-        params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || "");
-      }
-      return params;
-    }
-    document.addEventListener("DOMContentLoaded", () => {
-      var params = getQueryParams();
-      if (Object.keys(params).length > 0) {
-        var oauthInfoDiv = document.createElement("div");
-        oauthInfoDiv.id = "oauth-info";
-        oauthInfoDiv.style.background = "#222";
-        oauthInfoDiv.style.padding = "1rem";
-        oauthInfoDiv.style.textAlign = "center";
-        oauthInfoDiv.style.color = "#fff";
-        oauthInfoDiv.innerHTML = "<p>OAuth redirect received. Your token is: " + (params.token || "N/A") + "</p>";
-        if (params.token) {
-          oauthInfoDiv.innerHTML += '<p><a href="mylauncher://auth?token=' + encodeURIComponent(params.token) + '" style="color: var(--accent); text-decoration: underline;">Click here to open Command Launcher</a></p>';
+    // Dark/Light Mode Toggle
+    const modeToggleBtn = document.getElementById('mode-toggle');
+    
+    // Set initial mode based on localStorage or system preference
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedMode = localStorage.getItem('mode');
+      if (savedMode === 'light') {
+        document.body.classList.add('light-mode');
+        modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+      } else if (savedMode === 'dark') {
+        document.body.classList.remove('light-mode');
+        modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        // Default: check system preference
+        if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+          document.body.classList.add('light-mode');
+          modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        } else {
+          document.body.classList.remove('light-mode');
+          modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
         }
-        document.body.insertBefore(oauthInfoDiv, document.body.firstChild);
+      }
+    });
+    
+    modeToggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      if (document.body.classList.contains('light-mode')) {
+        modeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem('mode', 'light');
+      } else {
+        modeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem('mode', 'dark');
+      }
+    });
+
+    // Copy-to-clipboard for checksum
+    const copyBtn = document.getElementById('copy-btn');
+    const checksumCode = document.getElementById('checksum-code');
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(checksumCode.textContent).then(() => {
+        copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+        setTimeout(() => {
+          copyBtn.innerHTML = '<i class="far fa-copy"></i>';
+        }, 2000);
+      });
+    });
+
+    // Scroll-to-top functionality
+    const scrollTopBtn = document.getElementById('scroll-top');
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+    });
+
+    // Source Code Modal functionality
+    const viewSourceBtn = document.getElementById('view-source-btn');
+    const sourceModal = document.getElementById('sourceModal');
+    const closeButton = document.querySelector('.close-button');
+
+    viewSourceBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      sourceModal.style.display = 'block';
+    });
+    closeButton.addEventListener('click', () => {
+      sourceModal.style.display = 'none';
+    });
+    window.addEventListener('click', (e) => {
+      if (e.target === sourceModal) {
+        sourceModal.style.display = 'none';
       }
     });
   </script>
-
-  <!-- The rest of your landing page content (header, sections, footer, etc.) -->
-  <!-- ... (Use the HTML content provided earlier) ... -->
-
-  <!-- For brevity, the rest of the HTML content is identical to your existing page -->
 </body>
 </html>
