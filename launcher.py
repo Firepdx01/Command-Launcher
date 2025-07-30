@@ -464,7 +464,7 @@ class MainWindow(QMainWindow):
     """
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Command Launcher Client")
+        self.setWindowTitle("Command Launcher Client V1.0")
         self.setWindowIcon(QIcon("Command_Block_(Story_Mode).ico"))  # Replace with your own icon if desired
         self.resize(700, 550)
 
