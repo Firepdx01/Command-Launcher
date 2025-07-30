@@ -1,0 +1,28 @@
+{
+    "minecraft_directory": "E:/New folder (7)",
+    "ram": 4096,
+    "mod_loader": "None",
+    "extra_jvm_args": "",
+    "java_path": "E:/JAVA/bin/javaw.exe",
+    "accounts": [
+        {
+            "type": "offline",
+            "name": "Firepdx",
+            "uuid": "e5b1f032-6d22-11f0-89c8-90b11ca715ca"
+        }
+    ],
+    "active_account_uuid": "e5b1f032-6d22-11f0-89c8-90b11ca715ca",
+    "profiles": [
+        {
+            "profile_uuid": "8e832f98-999a-4bfe-9557-204955b3c425",
+            "name": "s",
+            "mc_version": "1.20.4",
+            "mod_loader": "None",
+            "ram": 4096,
+            "total_playtime_seconds": 0
+        }
+    ],
+    "active_profile_uuid": "",
+    "theme": "Light Theme",
+    "server": ""
+}
