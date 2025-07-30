@@ -9,6 +9,11 @@
             "type": "offline",
             "name": "Firepdx",
             "uuid": "e5b1f032-6d22-11f0-89c8-90b11ca715ca"
+        },
+        {
+            "type": "offline",
+            "name": "GLIDUX",
+            "uuid": "eed564be-6d2b-11f0-a975-90b11ca715ca"
         }
     ],
     "active_account_uuid": "e5b1f032-6d22-11f0-89c8-90b11ca715ca",
