@@ -1,0 +1,16 @@
+{
+    "minecraft_directory": "C:\\Users\\dada\\AppData\\Roaming\\.minecraft",
+    "ram": 4096,
+    "mod_loader": "None",
+    "extra_jvm_args": "",
+    "java_path": "",
+    "accounts": [
+        {
+            "type": "offline",
+            "name": "Firepdx",
+            "uuid": "95613526-6d32-11f0-92f4-90b11ca715ca"
+        }
+    ],
+    "active_account_uuid": "95613526-6d32-11f0-92f4-90b11ca715ca",
+    "server": ""
+}
