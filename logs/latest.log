@@ -1,45 +1,13 @@
-[21:34:56] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:34:56] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:34:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:34:56] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2859 for Minecraft 1.12.2 loading
-[21:34:56] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_51, running on Windows 8.1:amd64:6.3, installed at C:\Users\dada\AppData\Roaming\.minecraft\runtime\jre-legacy\windows-x64\jre-legacy
-[21:34:56] [main/INFO] [FML]: Searching C:\Users\dada\AppData\Roaming\.minecraft\mods for mods
-[21:34:56] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:34:56] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[21:34:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:34:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:34:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[21:34:59] [main/INFO] [FML]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
-[21:34:59] [main/INFO] [FML]: Found valid fingerprint for Minecraft. Certificate fingerprint cd99959656f753dc28d863b46769f7f8fbaefcfc
-[21:34:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[21:34:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[21:35:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[21:35:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[21:35:00] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[21:35:01] [main/ERROR] [LaunchWrapper]: Unable to launch
-java.lang.reflect.InvocationTargetException: null
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-Caused by: java.lang.UnsatisfiedLinkError: no lwjgl64 in java.library.path
-	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1865) ~[?:1.8.0_51]
-	at java.lang.Runtime.loadLibrary0(Runtime.java:870) ~[?:1.8.0_51]
-	at java.lang.System.loadLibrary(System.java:1122) ~[?:1.8.0_51]
-	at org.lwjgl.Sys$1.run(Sys.java:72) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_51]
-	at org.lwjgl.Sys.doLoadLibrary(Sys.java:66) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at org.lwjgl.Sys.loadLibrary(Sys.java:87) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at org.lwjgl.Sys.<clinit>(Sys.java:117) ~[lwjgl-2.9.4-nightly-20150209.jar:?]
-	at net.minecraft.client.Minecraft.func_71386_F(Minecraft.java:2984) ~[bib.class:?]
-	at net.minecraft.client.main.Main.main(SourceFile:38) ~[Main.class:?]
-	... 6 more
-[21:35:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: net.minecraftforge.fml.relauncher.FMLSecurityManager$ExitTrappedException
-[21:35:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraftforge.fml.relauncher.FMLSecurityManager.checkPermission(FMLSecurityManager.java:49)
-[21:35:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at java.lang.SecurityManager.checkExit(SecurityManager.java:761)
-[21:35:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at java.lang.Runtime.exit(Runtime.java:107)
-[21:35:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at java.lang.System.exit(System.java:971)
-[21:35:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:138)
-[21:35:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[14:52:31] [Client thread/INFO]: Setting user: Firepdx
+[14:52:31] [Client thread/INFO]: (Session ID is token::e5b1f032-6d22-11f0-89c8-90b11ca715ca)
+[14:52:33] [Client thread/INFO]: LWJGL Version: 2.9.4
+[14:52:34] [Client thread/INFO]: Reloading ResourceManager: Default
+[14:52:34] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[14:52:34] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[14:52:34] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[14:52:35] [Thread-5/INFO]: OpenAL initialized.
+[14:52:35] [Sound Library Loader/INFO]: Sound engine started
+[14:52:36] [Client thread/INFO]: Created: 512x512 textures-atlas
+[14:52:38] [Client thread/INFO]: Stopping!
+[14:52:38] [Client thread/INFO]: SoundSystem shutting down...
+[14:52:38] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

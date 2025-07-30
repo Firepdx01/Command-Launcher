@@ -3,3 +3,4 @@ minecraft-launcher-lib
 random-username
 pyqt5-tools
 mcstatus
+feedparser
