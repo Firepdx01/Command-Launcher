@@ -1,9 +1,9 @@
 {
-    "minecraft_directory": "E:/New folder (7)",
+    "minecraft_directory": "E:/New folder (23)",
     "ram": 4096,
-    "mod_loader": "None",
+    "mod_loader": "Fabric",
     "extra_jvm_args": "",
-    "java_path": "E:/JAVA/bin/javaw.exe",
+    "java_path": "E:/jar/bin/javaw.exe",
     "accounts": [
         {
             "type": "offline",
@@ -29,5 +29,5 @@
     ],
     "active_profile_uuid": "",
     "theme": "Light Theme",
-    "server": ""
+    "server": "play.hylexmc.net"
 }
