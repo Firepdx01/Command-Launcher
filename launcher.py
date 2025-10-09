@@ -3,7 +3,7 @@
 # REQUIRED LIBRARIES:
 # pip install PyQt5 minecraft-launcher-lib random-username mcstatus
 #
-# Made by firepdx, with major feature enhancements by Gemini.
+# Made by firepdx, with major feature enhancements by Sajjad
 
 import sys
 import os
@@ -1105,5 +1105,6 @@ if __name__ == "__main__":
             from urllib import request
             request.urlretrieve("https://i.imgur.com/rS2Fk9z.png", "assets/title.png") # A generic placeholder
         except: pass
+
 
     main()
